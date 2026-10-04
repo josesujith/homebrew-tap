@@ -2,9 +2,9 @@
 
 Homebrew tap for josesujith's tools.
 
-```
-brew tap josesujith/tap
-```
+Install by full name, `josesujith/tap/<name>`. Homebrew 7 refuses to load
+anything from a tap you have not trusted when you ask for it by its short name;
+the full name trusts it, and taps this repo if needed.
 
 ## displayctl
 
@@ -14,7 +14,7 @@ See [josesujith/displayctl](https://github.com/josesujith/displayctl).
 Prebuilt app and CLI:
 
 ```
-brew install --cask displayctl
+brew install --cask josesujith/tap/displayctl
 xattr -dr com.apple.quarantine /Applications/DisplayCtl.app
 ```
 
@@ -25,6 +25,6 @@ Or build the CLI from source (needs current Xcode) and run the menu bar app as
 a service:
 
 ```
-brew install displayctl
+brew install josesujith/tap/displayctl
 brew services start displayctl
 ```
