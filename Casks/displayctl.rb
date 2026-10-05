@@ -15,8 +15,8 @@
 # Users then run:
 #   brew install --cask josesujith/tap/displayctl
 cask "displayctl" do
-  version "0.1.1"
-  sha256 "9e8659d10f2adef871ca9e03560a0239774bfe031acbf5272c7e6cffd4d28ec7"
+  version "0.1.2"
+  sha256 "4e61ebd84d16b7207d8d340f4a6dcd43a4c8d913e28baae3b34c75d4d1ab903b"
 
   url "https://github.com/josesujith/displayctl/releases/download/v#{version}/DisplayCtl-#{version}.zip"
   name "DisplayCtl"
@@ -46,7 +46,6 @@ cask "displayctl" do
     Homebrew 7 removed the --no-quarantine option, so this is the way.
     Signing with a Developer ID and notarizing removes the need for it.
 
-    To start it at login, add DisplayCtl to System Settings > General >
-    Login Items.
+    To start it at login, tick Start at Login in its menu.
   EOS
 end
